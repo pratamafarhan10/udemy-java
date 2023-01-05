@@ -14,7 +14,7 @@ public class RockPaperScissors {
         String answer = scan.nextLine();
 
         if (answer.equals("yes")) {
-            System.out.println("Great!");
+            System.out.println("\nGreat!");
             System.out.println("rock - paper - scissors, shoot!");
 
             String userChoice = scan.nextLine();
@@ -106,8 +106,6 @@ public class RockPaperScissors {
      * 
      * 
      *         4. Otherwise, print "INVALID CHOICE" and exit the program.
-     *
-     *
      */
 
     public static String result(String yourChoice, String computerChoice) {
@@ -140,7 +138,7 @@ public class RockPaperScissors {
      */
 
     public static void printResult(String yourChoice, String computerChoice, String result) {
-        System.out.println("You chose: " + yourChoice);
+        System.out.println("\nYou chose: " + yourChoice);
         System.out.println("The computer chose: " + computerChoice);
         System.out.println(result);
     }
