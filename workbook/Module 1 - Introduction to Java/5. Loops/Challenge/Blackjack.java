@@ -249,7 +249,7 @@ public class Blackjack {
             System.out.println("Please write 'hit' or 'stay'");
             answer = scan.nextLine();
 
-            if (answer.equals("hit") || answer.equals("stay")) {
+            if (answer.equalsIgnoreCase("hit") || answer.equalsIgnoreCase("stay")) {
                 break;
             }
         }

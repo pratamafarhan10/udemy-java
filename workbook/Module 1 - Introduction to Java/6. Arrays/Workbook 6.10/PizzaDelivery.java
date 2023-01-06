@@ -16,8 +16,16 @@ public class PizzaDelivery {
         String[] toppings = new String[numToppings]; // Length of array equals what the user inputs.
         
         // Task 1 here
+        for (int i = 0; i < toppings.length; i++) {
+            System.out.print((i + 1) + ". ");
+            toppings[i] = scan.nextLine();
+        }
         
         System.out.println("\nThank you! Here are the toppings you ordered");
+
+        for (int i = 0; i < toppings.length; i++) {
+            System.out.println((i + 1) + ". " + toppings[i]);
+        }
         
         // Task 2 here
         
