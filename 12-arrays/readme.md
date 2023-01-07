@@ -30,3 +30,14 @@ myStringArray = new String[]{"a", "b", "c"};
 ```
 
 https://stackoverflow.com/questions/1200621/how-do-i-declare-and-initialize-an-array-in-java
+
+
+## Copying an array
+
+Arrays.copyOfRange(int[] original, int from, int to)
+- from: the index of the element
+- to: how many element 
+
+
+Arrays.copyOf(int[] original, int newLength)
+- newLength: the length of the array that you want to take.
