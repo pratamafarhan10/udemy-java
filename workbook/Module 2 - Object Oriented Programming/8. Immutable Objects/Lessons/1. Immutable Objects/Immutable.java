@@ -2,7 +2,10 @@ public class Immutable {
     public static void main(String[] args) {        
 
         int apples = 5;
-        Integer applesWrapper = 5;
+        Integer applesWrapper = null;
+        applesWrapper = 5;
+
+        System.out.println(applesWrapper.toString());
 
         System.out.println(apples);
         System.out.println(applesWrapper);
