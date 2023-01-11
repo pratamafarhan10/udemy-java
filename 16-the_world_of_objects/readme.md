@@ -50,3 +50,33 @@ The newly object will accept a source which is the same type. And it will set th
 ## Arrays are mutable objects
 - A variable will store the reference to the array. So **avoid setting variables equal to each other**.
 - Both variables will share a reference to the same object
+
+## toString
+
+If you print out/call the object directly like below
+
+```java
+Car toyota = new Car();
+
+System.out.println(car)
+```
+
+Java will call toString method from Class or **if we override the toString method in our class like below, java will call the overriden class**
+
+```java
+public class Car{
+    //...
+    public String toString(){
+        return this.brand + " " + this.year;
+    }
+}
+```
+
+## equals
+- equal contract, when you override the equals method you have to override the hashcode method too.
+- don't change the name, return value, and the parameter from the methods that you want to override. Because java can't recognize it.
+
+Step to override the equals method
+1. Check if reference are equal
+2. Check if the target is even a city object
+3. Return true if the fields are equal
