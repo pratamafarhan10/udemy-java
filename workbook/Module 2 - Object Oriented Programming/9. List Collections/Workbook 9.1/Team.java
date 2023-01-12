@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class Team {
     private String name;
@@ -30,4 +31,19 @@ public class Team {
         this.players.put(position, player);
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (o == this)
+            return true;
+        if (!(o instanceof Team)) {
+            return false;
+        }
+        Team team = (Team) o;
+        return Objects.equals(name, team.name) && Objects.equals(players, team.players);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, players);
+    }
 }

@@ -23,5 +23,15 @@ public class Main {
         System.out.println("========== Does map contains ==========");
         System.out.println(peopleMap.containsKey(new Contact("Alice", 20)));
         System.out.println("Alice address is: " + peopleMap.get(new Contact("Alice", 20)) );
+
+        HashMap<String, Integer> score = new HashMap<>();
+        String key1 = "john";
+        String key2 = "john";
+
+        score.put(key1, 10);
+
+        System.out.println(score.get(key2));
+        System.out.println(key1.hashCode());
+        System.out.println(key1.hashCode());
     }
 }
