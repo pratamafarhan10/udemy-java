@@ -21,7 +21,5 @@ public class Main {
         System.out.println("Area: " + area);
         System.out.println("Volume: " + volume);
     }
-
-
 }
   
